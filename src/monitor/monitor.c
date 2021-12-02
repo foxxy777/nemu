@@ -52,7 +52,7 @@ static long load_img() {
   fclose(fp);
   return size;
 }
-
+//table是数组,元素是struct,用的struct叫option。
 static int parse_args(int argc, char *argv[]) {
   const struct option table[] = {
     {"batch"    , no_argument      , NULL, 'b'},
